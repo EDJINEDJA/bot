@@ -51,8 +51,8 @@ def bot(config):
     for symbol in params_coin:
         try:
             binance.cancel_all_orders(symbol)
-        except Exception as e:
-            print(f"    Error: {e}")
+        except Exception:
+            pass
 
         for symbol in symbol_balance:
             pair = symbol + "USDT"

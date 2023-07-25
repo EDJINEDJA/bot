@@ -1,8 +1,10 @@
 name: run app.py
 
 on:
-  schedule:
-    - cron: '0 * * * *' # run script every hour
+  #schedule:
+    #- cron: '0 * * * *' # run script every hour
+  #push
+  workflow_dispatch
 
 jobs:
   build:
