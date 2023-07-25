@@ -19,8 +19,8 @@ def bot(config):
     print("--- Start Execution Time :", current_time, "---")
 
     binance = SpotBinance(
-        apiKey=os.getenv("apiKey"),
-        secret=os.getenv("secret"),
+        apiKey=os.environ["apiKey"],
+        secret=os.environ["secret"],
     )
 
     pair_list = params_coin.keys()
